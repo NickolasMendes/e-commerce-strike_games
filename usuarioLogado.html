@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font Awesome Link -->
+  <script src="https://kit.fontawesome.com/256a315b5c.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inder&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/home/todosjogos.css">
+  <link rel="stylesheet" href="css\footer\footer.css">
+  <link rel="stylesheet" href="css\home\footer1.css">
+  <link rel="stylesheet" href="css/home/carrinho.css">
+  <link rel="stylesheet" href="./css/login/mudarconta.css">
+  <title>Striker Games | Minha Conta</title>
+</head>
+
+<body>
+  <header class="header-container">
+    <div class="header-all">
+      <nav class=hamburger-menu>
+        <a class=hamburger href=#>&#9776;</a>
+        <aside>
+          <ul>
+            <li><a href=#><img src="https://myawsprojectwebgames.s3.amazonaws.com/icones/controle.svg" alt="" width="40px">Plataforma</a></li>
+            <li><a href=#><img src="https://myawsprojectwebgames.s3.amazonaws.com/icones/icons8-playstation.svg" alt="" width="40px">Playstation</a></li>
+            <li><a href=#><img src="https://myawsprojectwebgames.s3.amazonaws.com/icones/xbox.svg" alt="" width="40px">Xbox</a></li>
+            <li><a href=#><img src="https://myawsprojectwebgames.s3.amazonaws.com/icones/icons8-workstation-80.svg" alt="" width="60px">PC</a></li>
+          </ul>
+        </aside>
+      </nav>
+      <a href="#" class="responsivo"><i class="fa-solid fa-magnifying-glass responsivo" style="color: #8f8d8d;"></i></a>
+      <a href="index.html"><img src="https://myawsprojectwebgames.s3.amazonaws.com/icones/logo.png" alt="Logo" class="header-logo"></a>
+      <div class="header-input">
+        <input type="text" placeholder="Pesquisar" class="input-search">
+        <a href="#"><i class="fa-solid fa-magnifying-glass" style="color: #8f8d8d;"></i></a>
+        <div class="output"></div>
+      </div>
+      <a href="index.html"><img src="https://myawsprojectwebgames.s3.amazonaws.com/icones/logo.png" alt="Logo" class="header-logo-meio"></a>
+      <div class="header-all-botao">
+        <div class="header-botao">
+          <a href="#" class="cart-btn">Carrinho</a>
+          <a href="#"><img src="https://myawsprojectwebgames.s3.amazonaws.com/icones/carrinho.svg" alt=""></a>
+        </div>
+        <div class="header-botao">
+          <a href="usuarioLogado.html">Minha Conta</a>
+          <a href="login.html"><img src="https://myawsprojectwebgames.s3.amazonaws.com/icones/conta.svg" alt=""></a>
+        </div>
+      </div>
+      <div class="cart-overlay">
+        <div class="cart">
+          <span class="close-cart">
+            <i class="fas fa-window-close"></i>
+          </span>
+          <h2>your cart</h2>
+          <div class="cart-content">
+            <div class="cart-item">
+              <img src="img/jogos/fifa.png" alt="">
+              <div>
+                <h4>FIFA 23</h4>
+                <h5>R$ 300,00</h5>
+                <span class="remove-item">remover</span>
+              </div>
+              <div>
+                <i class="fas fa-chevron-up"></i>
+                <p class="item-amount">1</p>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+            </div>
+          </div>
+          <div class="cart-footer">
+            <h3>total: R$ <span class="cart-total">0</span></h3>
+            <button class="clear-cart banner-btn">limpar carrinho</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="section-container">
+      <div class="section-plataforma">
+        <a href="#"><img src="https://myawsprojectwebgames.s3.amazonaws.com/icones/controle.svg" alt="">
+          <span>Plataforma</span>
+        </a>
+      </div>
+      <div class="section-barra-play"></div>
+      <div class="section-play">
+        <a href="#"><img src="https://myawsprojectwebgames.s3.amazonaws.com/icones/icons8-playstation.svg" alt="">
+          <span>Playstation</span>
+        </a>
+      </div>
+      <div class="section-barra-xbox"></div>
+      <div class="section-xbox">
+        <a href="#"><img src="https://myawsprojectwebgames.s3.amazonaws.com/icones/xbox.svg" alt="">
+          <span>Xbox</span>
+        </a>
+      </div>
+      <div class="section-barra-pc"></div>
+      <div class="section-pc">
+        <a href="#"><img src="https://myawsprojectwebgames.s3.amazonaws.com/icones/icons8-workstation-80.svg" alt="" class="pc-img">
+          <span>PC</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="container-conteudo">
+      <div class="container-titulo">
+        <p>Bem-vindo a</p>
+        <h1>Striker Games <span class="output"></span>!</h1>
+      </div>
+      <div class="container-form">
+        <div class="form1">
+          <input type="text" id="nome" placeholder="Nome Completo*" class="input1 style" required>
+          <input type="number" id="cpf" placeholder="CPF*" class="input1 style" required>
+        </div>
+        <div class="form1">
+          <input type="text" id="email" placeholder="E-mail*" class="input1 style" required>
+          <input type="tel" id="telefone" placeholder="Telefone celular*" class="input1 style" required>
+        </div>
+        <div class="form1">
+          <input type="number" id="cep" placeholder="CEP*" class="input1 style" required>
+          <input type="text" id="logradouro" placeholder="Logradouro" class="input1 style">
+        </div>
+        <div class="form1">
+          <input type="text" id="bairro" placeholder="Bairro" class="input1 style">
+          <input type="text" id="cidade" placeholder="Cidade" class="input1 style">
+        </div>
+        <div class="form1">
+          <input type="password" id="senha" placeholder="" class="input1 style" required>
+        </div>
+        <div class="container-botao">
+          <a href="#" class="botao-criar" id="submit">Atualizar Conta</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div id="footer_content">
+      <div class="logo_footer">
+        <a href="index.html">
+          <img class="imagem-footer" src="https://myawsprojectwebgames.s3.amazonaws.com/icones/logo.png" alt="">
+        </a>
+      </div>
+
+
+
+      <ul class="footer-list">
+        <li>
+          <h3>Institucional</h3>
+        </li>
+        <li>
+          <a href="#" class="footer-link">Contato</a>
+        </li>
+        <li>
+          <a href="#" class="footer-link">Sobre a empresa</a>
+        </li>
+        <li>
+          <a href="#" class="footer-link">Política de Envio</a>
+        </li>
+        <li>
+          <a href="#" class="footer-link">Política de Privacidade</a>
+        </li>
+        <li>
+          <a href="#" class="footer-link">Política de Trocas e Devoluções</a>
+        </li>
+      </ul>
+
+      <ul class="footer-list">
+        <li>
+          <h3>Plataformas</h3>
+        </li>
+        <li>
+          <a href="#" class="footer-link">Playstation</a>
+        </li>
+        <li>
+          <a href="#" class="footer-link">Xbox</a>
+        </li>
+        <li>
+          <a href="#" class="footer-link">Computador</a>
+        </li>
+      </ul>
+
+      <div id="footer_contacts">
+        <div id="footer_social_media">
+
+          <a href="#" class="footer-link" id="instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a href="#" class="footer-link" id="facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+
+          <a href="#" class="footer-link" id="whatsapp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div id="footer_copyright">
+      &#169
+      2023. Todos os direitos reservados aos alunos da UNINOVE.
+    </div>
+  </footer>
+
+  <script src="./js/minhaconta.js"></script>
+</body>
+
+</html>
